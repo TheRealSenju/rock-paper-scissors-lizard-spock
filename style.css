@@ -388,14 +388,14 @@ body > button {
   }
   .paper-container {
     top: 40px;
-    right: -55px;
+    right: -45px;
   }
   .rock-container {
     bottom: -30px;
   }
   .spock-container {
     top: 40px;
-    left: -55px;
+    left: -45px;
   }
   .lizard-container {
     bottom: -30px;
