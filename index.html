@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors, Lizard, Spock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 5px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title-board">
+      <div class="game-title"><img src="./images/logo-bonus.svg" alt="#" /></div>
+      <div class="score-board">
+        <p class="text">SCORE</p>
+        <p class="num">-</p>
+      </div>
+    </div>
+    <div class="game-area">
+      <div class="default">
+        <img src="./images/bg-pentagon.svg" alt="" />
+        <div class="scissors-container container">
+          <div class="scissors-button button"><img src="./images/icon-scissors.svg" alt="" /></div>
+        </div>
+        <div class="paper-container container">
+          <div class="paper-button button"><img src="./images/icon-paper.svg" alt="" /></div>
+        </div>
+        <div class="rock-container container">
+          <div class="rock-button button"><img src="./images/icon-rock.svg" alt="" /></div>
+        </div>
+        <div class="lizard-container container">
+          <div class="lizard-button button"><img src="./images/icon-lizard.svg" alt="" /></div>
+        </div>
+        <div class="spock-container container">
+          <div class="spock-button button"><img src="./images/icon-spock.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="in-game hidden">
+        <div class="player">
+          <p class="picked-text">YOU PICKED</p>
+          <div class="player-container in-game-container">
+            <div class="player-move move">
+              <img src="./images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="result hidden">
+          <p>YOU WIN</p>
+          <button>PLAY AGAIN</button>
+        </div>
+        <div class="house">
+          <p class="picked-text">THE HOUSE PICKED</p>
+          <div class="house-container house-container-init in-game-container">
+            <div class="house-move house-init move">
+              <img class="hidden" src="./images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="reset-btn">RESET</button>
+    <button class="rules-btn">RULES</button>
+    <div class="overlay hidden"></div>
+    <div class="rules-page hidden">
+      <div>
+        <p>RULES</p>
+        <img src="./images/close-x.svg" alt="" />
+      </div>
+      <img src="./images/image-rules-bonus.svg" alt="" />
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Clarence</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
